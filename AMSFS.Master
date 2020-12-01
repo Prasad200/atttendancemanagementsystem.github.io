@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AMSFS.master.cs" Inherits="Attendancemanagementsystemforstudents.AMSFS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+                <h1 style="font-size:50px" class="auto-style5">welcome to Modern College of Engineering</h1>
+            <div style="background-color:aliceblue;">
+                <asp:Label ID="LabUserLogin" runat="server" Text=""></asp:Label>
+                <asp:LinkButton ID="LnkCourse" runat="server" OnClick="LnkCourse_Click">CourseIntroPage</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkTeacher" runat="server" OnClick="LnkTeacher_Click">TeacherIntroPage</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkStudent" runat="server" OnClick="LnkStudent_Click">StudentIntroPage</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkLogout" runat="server" OnClick="LnkLogout_Click">Logout</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </center>
+    </form>
+</body>
+</html>
